@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tea"
+    tools:context="com.example.codetribe.coffeeandtea.MainActivity">
+
+    <Button
+        android:id="@+id/btnEspresso"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Espresso"
+        android:textSize="10sp"
+        android:layout_above="@+id/btnCappuccino"
+        android:layout_toLeftOf="@+id/txtMOz"
+        android:layout_toStartOf="@+id/txtMOz" />
+
+    <TextView
+        android:id="@+id/txtCoffeeFreshlyBrewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COFFEE FRESHLY BREWED"
+        android:textColor="#f0ffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtMOz"
+        android:layout_toLeftOf="@+id/txtAnd"
+        android:layout_toStartOf="@+id/txtAnd" />
+
+    <Button
+        android:id="@+id/btnCappuccino"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Cappuccino"
+        android:textSize="10sp"
+        android:layout_above="@+id/btnCaffeMocha"
+        android:layout_alignLeft="@+id/btnEspresso"
+        android:layout_alignStart="@+id/btnEspresso" />
+
+    <Button
+        android:id="@+id/btnCaffeMocha"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Caffe Mocha"
+        android:textSize="10sp"
+        android:layout_alignBaseline="@+id/btnChamolmileTea"
+        android:layout_alignBottom="@+id/btnChamolmileTea"
+        android:layout_alignLeft="@+id/btnCappuccino"
+        android:layout_alignStart="@+id/btnCappuccino" />
+
+    <Button
+        android:id="@+id/btnAmericano"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Americano"
+        android:textSize="10sp"
+        android:layout_below="@+id/btnCaffeMocha"
+        android:layout_alignLeft="@+id/btnCappuccino"
+        android:layout_alignStart="@+id/btnCappuccino" />
+
+    <Button
+        android:id="@+id/btnSkinnyLAtte"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Skinny Latte"
+        android:textSize="10sp"
+        android:layout_below="@+id/btnAmericano"
+        android:layout_alignRight="@+id/btnAmericano"
+        android:layout_alignEnd="@+id/btnAmericano" />
+
+    <TextView
+        android:id="@+id/txtTea"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="TEA"
+        android:textColor="#f0ffff"
+        android:textSize="30sp"
+        android:layout_below="@+id/txtMOz"
+        android:layout_toRightOf="@+id/txtMOz"
+        android:layout_toEndOf="@+id/txtMOz" />
+
+    <Button
+        android:id="@+id/btnEnglishBreakfastTea"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="English Breakfast Tea"
+        android:textSize="10sp"
+        android:layout_below="@+id/txtTea"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/btnMintBlendTea"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Mint Blend Tea"
+        android:textSize="10sp"
+        android:textColor="#f8f8ff"
+        android:layout_below="@+id/btnEnglishBreakfastTea"
+        android:layout_alignLeft="@+id/btnEnglishBreakfastTea"
+        android:layout_alignStart="@+id/btnEnglishBreakfastTea" />
+
+    <Button
+        android:id="@+id/btnChamolmileTea"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Chamolmile Tea"
+        android:textSize="10sp"
+        android:layout_below="@+id/btnMintBlendTea"
+        android:layout_alignLeft="@+id/btnMintBlendTea"
+        android:layout_alignStart="@+id/btnMintBlendTea" />
+
+    <TextView
+        android:id="@+id/txtMOz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="MO'z CAFFE"
+        android:textSize="35sp"
+        android:textColor="#ff69b4"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="mollysaadiq@gmail.com 0125863011"
+        android:layout_marginBottom="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/txtContact"
+        android:layout_alignStart="@+id/txtContact" />
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:textSize="25sp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/btnCappuccino"
+        android:layout_alignStart="@+id/btnCappuccino" />
+
+    <TextView
+        android:id="@+id/txtAnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and"
+        android:textSize="15sp"
+        android:textColor="#f0ffff"
+        android:layout_alignBaseline="@+id/txtCoffeeFreshlyBrewed"
+        android:layout_alignBottom="@+id/txtCoffeeFreshlyBrewed"
+        android:layout_toLeftOf="@+id/txtTea"
+        android:layout_toStartOf="@+id/txtTea" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_above="@+id/txtContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+</RelativeLayout>
